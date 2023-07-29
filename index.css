@@ -22,6 +22,7 @@ nav {
   left: 0;
   right: 0;
   background-color: #302b2b;
+  width: fit-content;
 }
 nav .header {
   display: flex;
@@ -621,14 +622,16 @@ main .mainimg {
     width: 35vw;
   }
 }
+
 .footer {
   display: flex;
   flex-direction: row;
   margin-top: 5vh;
-  margin-bottom: 25vh;
+  margin-bottom: 20vh;
   /* margin-left: 5vh; */
   /* top:-200px; */
   gap: 6vw;
+  /* width: 100vw; */
 }
 .footlogo {
   background-color: #000000;
@@ -636,6 +639,9 @@ main .mainimg {
   margin-left: 15vw;
   width: 5vw;
   height: 7vh;
+}
+.footer ul li{
+  list-style: none;
 }
 .footer ul li a {
   list-style: none;
@@ -662,7 +668,7 @@ main .mainimg {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  width: 22vw;
+  width: fit-content;
   height: 5.7vh;
   border-radius: 10px;
 }
@@ -675,10 +681,11 @@ main .mainimg {
   
 }
 .footer input{
-  background-color:  #7e7a7a;
+  background-color:  #7e7575;
   padding-left: 10px;
   border: none;
   /* color: #000; */
+  width: 7vw;
 }
 input::placeholder{
   color: #000;
@@ -708,4 +715,29 @@ input::placeholder{
 .uparrow button{
   background-color: #1b1b1b;
   cursor: pointer;
+}
+@media(max-width:1000px){
+  .soc a img{
+    width: 20px;
+  }
+  .footer{
+    align-items: center;
+    gap: 1vw;}
+  .footlogo{
+    width: 5vw;
+    margin-left: 5vw;
+  }
+  .sub{
+    width: fit-content;
+  }
+  .footer ul li a{
+    font-size: 12px;
+  }
+  .subs{
+    font-size: 10px;
+  }
+  .uparrow img{
+    width: 15px;
+  }
+  
 }
