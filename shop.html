@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Website Checkout</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Checkout</h1>
+        <form id="checkoutForm">
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="price">Total Value</label>
+                    <input type="text" name="" id="price">
+                </div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry">Expiry Date:</label>
+                <input type="text" id="expiry" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+            </div>
+            <button type="submit" id="checkoutBtn">Place Order</button>
+        </form>
+    </div>
+
+    <script src="shop.js"></script>
+</body>
+</html>
